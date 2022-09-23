@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<label>
+   <code>pattern="[0-9,]*"</code>
+    <input type="number" pattern="[0-9,]*" />
+</label>
+
+<label>
+    <code>inputmode="decimal"</code>
+    <input type="number" inputmode="decimal"/>
+</label>
+
+<label>
+    <code>pattern="[0-9,]*" & inputmode="decimal"</code>
+    <input type="number" pattern="[0-9,]*" inputmode="decimal"/>
+</label>
+
+<label>
+    <code>lang="en"</code>
+    <input lang="en" type="number"/>
+</label>
+
+<label>
+    <code>lang="sv"</code>
+    <input lang="sv" type="number"/>
+</label>
+
+</body>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        padding: 20px;
+    }
+</style>
+</html>
