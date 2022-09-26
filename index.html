@@ -9,8 +9,8 @@
 </head>
 <body>
 <label>
-   <code>pattern="[0-9,]*"</code>
-    <input type="number" pattern="[0-9,]*" />
+   <code>type=number</code>
+    <input type="number"  />
 </label>
 
 <label>
@@ -19,14 +19,19 @@
 </label>
 
 <label>
-    <code>pattern="[0-9,]*" & inputmode="decimal"</code>
+    <code>type=number inputmode="decimal"</code>
     <input type="number" inputmode="decimal"/>
 </label>
     
 <label>
-    <code>type="text" pattern="\d*" & inputmode="numeric"</code>
-<input type="text" inputmode="numeric" pattern="\d*" />
+    <code>type="text" pattern="[0-9,.]*" & inputmode="numeric"</code>
+<input type="text" inputmode="numeric" pattern="[0-9,.]*" />
     </label>
+    <label>
+    <code>type="text" pattern="[0-9,.]*" & inputmode="decimal"</code>
+<input type="text" inputmode="decimal" pattern="[0-9,.]*" />
+    </label>
+    
 <label>
     <code>lang="en"</code>
     <input lang="en" type="number"/>
